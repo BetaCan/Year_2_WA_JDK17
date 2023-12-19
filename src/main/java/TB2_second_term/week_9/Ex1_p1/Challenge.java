@@ -1,0 +1,6 @@
+package TB2_second_term.week_9.Ex1_p1;
+
+public class Challenge
+{
+
+}
