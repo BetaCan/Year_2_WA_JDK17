@@ -34,10 +34,8 @@ public class Line {
 
     }
 
-    public ArrayList<Word> getWords(){
-
-
-        return null;
+    public List<Word> getWords(){
+        return words;
     }
 
 

@@ -7,7 +7,7 @@ public class Document
     private String name;
     private String author;
     private int priority;
-    private ArrayList<Line> lines;
+    private ArrayList<Line> lines= new ArrayList();
 
     public String getName() {
         return name;
@@ -40,6 +40,12 @@ public class Document
     }
 
     public void generatePreview(){
+
+        for (Line l :lines){
+            System.out.println(l);
+        }
+
+
 
 
     }
