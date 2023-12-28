@@ -5,7 +5,7 @@ public class Main
     public static void main(String[] args) {
         /*** NONE OF THE BELOW WILL RUN UNLESS YOU CREATE ALL THE
          CLASSES SPECIFIED IN THE EXERCISE!!!!! ***/
-/*
+
 
         Document d = new Document();
         Line l = new Line("This is a test line");
@@ -24,7 +24,7 @@ public class Main
         // should get
         // This is a test line
         // _My_ _*second*_ *line* now hooray
-        */
+
 
     }
 }
