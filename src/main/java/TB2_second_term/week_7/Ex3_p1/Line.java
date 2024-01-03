@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Line {
 
-    private List<Word> words;
+    private ArrayList<Word> words= new ArrayList();
 
 
     public Word getWord(int i){
@@ -14,18 +14,22 @@ public class Line {
         return words.get(i-1);
     }
 
-    public int getNumberOfWords(Word w){
-
+    public int getNumberOfWords() {
         return words.size();
     }
 
-    public Line (String content) {
 
+    public Line(String content) {
+        String[] wordsArray = content.split(" ");
+        for (String w : wordsArray) {
+            words.add(new Word(w));
+        }
     }
 
 
+
     public Line(Word[] content) {
-        words = Arrays.asList(content);
+        words.addAll(Arrays.asList(content));
 
     }
 
@@ -34,7 +38,7 @@ public class Line {
 
     }
 
-    public List<Word> getWords(){
+    public ArrayList<Word> getWords(){
         return words;
     }
 
