@@ -33,7 +33,14 @@ public class Customer
 
     public void setDiscount(double discount)
     {
-        this.discount = discount;
+        if (discount > 0){
+            this.discount = discount;
+        }
+        else {
+
+            throw new IllegalArgumentException("Discount must be greater than 0");
+        }
+
     }
 
     public double getDiscount()
