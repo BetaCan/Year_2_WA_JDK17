@@ -13,12 +13,17 @@ public class Challenge
     {
         // implement your code here
         try {
-            BufferedReader infile = new BufferedReader(new FileReader("\"/myfiles/japi-io/tasks.csv\""));
-            String word = infile.readLine();
-            infile.close();
+            BufferedReader file = new BufferedReader(new FileReader("/myfiles/japi-io/readfile.txt"));
+            String line;
+
+            while((line = file.readLine())!= null){
+                System.out.println(line);
+            }
+
+            file.close();
 
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
 
     }

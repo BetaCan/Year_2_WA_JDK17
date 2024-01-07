@@ -38,7 +38,7 @@ public class Customer
         }
         else {
 
-            throw new IllegalArgumentException("Discount must be greater than 0");
+            throw new IllegalArgumentException();
         }
 
     }
