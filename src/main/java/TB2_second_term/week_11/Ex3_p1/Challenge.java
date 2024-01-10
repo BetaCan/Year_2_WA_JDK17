@@ -1,9 +1,11 @@
 package TB2_second_term.week_11.Ex3_p1;
 
 
-import java.io.BufferedReader;
-import java.io.FileReader;
+
+import java.io.BufferedWriter;
+
 import java.io.IOException;
+import java.io.FileWriter;
 
 public class Challenge
 {
@@ -14,12 +16,13 @@ public class Challenge
 
         // implement your code here
         try {
-            BufferedReader file = new BufferedReader(new FileReader("/myfiles/japi-io/readfile.txt"));
-            String line;
+            BufferedWriter file = new BufferedWriter(new FileWriter("/myfiles/japi-io/writefile.txt"));
 
-            while((line = file.readLine())!= null){
-                System.out.println(line);
-            }
+
+            file.write("Hello there.");
+            file.write(System.lineSeparator());
+            file.write("This is a file I made.");
+
 
             file.close();
 
