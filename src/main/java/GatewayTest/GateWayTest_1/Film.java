@@ -1,4 +1,4 @@
-package TB1_first_term.GateWayTest;
+package GatewayTest.GateWayTest_1;
 
 public class Film {
 

@@ -12,6 +12,13 @@ public class Square {
         this.ypos=ypos;
     }
 
+    public Square (int xpos, int ypos, String player)
+    {
+        this.player=player;
+        this.xpos=xpos;
+        this.ypos=ypos;
+    }
+
 
 
     public String getPlayer() {
