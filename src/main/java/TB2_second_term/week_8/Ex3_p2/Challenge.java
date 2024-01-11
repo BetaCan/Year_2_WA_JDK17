@@ -7,5 +7,6 @@ public class Challenge
     {
         // implement your code here
         return map.values().toArray(new Integer[0]);
+
     }
 }

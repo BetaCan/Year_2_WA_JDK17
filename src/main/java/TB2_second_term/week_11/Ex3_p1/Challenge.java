@@ -20,7 +20,7 @@ public class Challenge
 
 
             file.write("Hello there.");
-            file.write(System.lineSeparator());
+            file.write(System.lineSeparator()); //file.newline
             file.write("This is a file I made.");
 
 
